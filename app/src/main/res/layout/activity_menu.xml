@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp">
+    </ImageView>
+        <Button
+            android:id="@+id/btn_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Biodata">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_book_24"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp">
+        </ImageView>
+        <Button
+            android:id="@+id/btn_buku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="buku">
+        </Button>
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="logout">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>
